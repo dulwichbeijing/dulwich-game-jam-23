@@ -176,7 +176,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Montserrat", "Helvetica Neue",Helvetica,Arial;
+    font-weight: bold;
+    text-transform: uppercase;
     color: #{{ site.data.template.color.primary }};
 }
 
@@ -268,14 +270,17 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
-    background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    min-height: 100vh;
+}
+
+header video {
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: grayscale(1);
 }
 
 header .intro-text {
@@ -326,6 +331,7 @@ header .intro-text .intro-heading {
 
 section {
     padding: 100px 0;
+    background: #fff;
 }
 
 section h2.section-heading {
@@ -652,8 +658,17 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
-aside.clients img {
+aside.supporters .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+aside.supporters img {
     margin: 50px auto;
+    width: auto;
+    height: 60px;
 }
 
 section#contact {

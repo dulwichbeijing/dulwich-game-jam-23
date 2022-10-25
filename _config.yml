@@ -8,8 +8,8 @@ description: "Dulwich Game Jam 2023 - create awesome games, win awesome prizes!"
 
 # Team names, titles and social links
 people:
-- name: Dr Yufeng Chi
-  pic: yufeng
+- name: 完美世界游戏
+  pic: wanmei
   position: Perfect World Games
   #social:
   #  - title: twitter
@@ -19,7 +19,7 @@ people:
   #  - title: stack-overflow
   #    url: #
 
-- name: Colin Walder
+- name: Mr Colin Walder
   pic: colin
   position: CD PROJEKT RED
   #social:
@@ -45,18 +45,12 @@ people:
   pic: sean
   position: Swansea University
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-# social:
-#  - title: twitter
-#    url: http://twitter.com/jekyllrb
-#  - title: facebook
-#    url:
-#  - title: stack-overflow
-#    url: http://stackoverflow.com/questions/tagged/jekyll
-#  - title: bitbucket 
-#    url: http://bitbucket.org/jekyll
-#  - title: github
-#    url: http://github.com/jekyll
+Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+ - title: facebook
+   url: https://www.facebook.com/EiM.Education.in.Motion
+ - title: linkedin
+   url: https://www.linkedin.com/company/educationinmotion/
 
 # Postal address (add as many lines as necessary)
 address:

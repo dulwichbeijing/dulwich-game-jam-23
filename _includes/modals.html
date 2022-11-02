@@ -1,6 +1,6 @@
- <!-- Portfolio Modals -->
+ <!-- talk Modals -->
  {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="talk-modal modal fade" id="talkModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -15,20 +15,18 @@
                             <h2>{{ post.title }}</h2>
                             <h3>{{ post.expert }}</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <img src="img/talks/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p>{{ post.description }}</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="#">{{ post.company }}</a>
+                                <li>Works at:
+                                    <strong><a href="{{ post.company-url }}">{{ post.company }}</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="">{{ post.talk-date }}</a>
-                                    </strong>
+                                    <strong>{{ post.talk-date }}</strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="">{{ post.category }}</a>
-                                    </strong>
+                                <li>Time:
+                                    <strong>{{ post.talk-time }}</strong> (China Standard Time)
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>

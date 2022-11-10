@@ -803,6 +803,11 @@ footer ul.quicklinks {
     line-height: 40px;
 }
 
+footer .branding {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
 ul.social-buttons {
     margin-bottom: 0;
 }

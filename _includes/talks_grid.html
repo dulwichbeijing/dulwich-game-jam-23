@@ -21,13 +21,19 @@
                     <div class="talk-caption">
                         <h4>{{ post.title }}</h4>
                         <p class="text-muted">{{ post.expert }} - {{ post.talk-date }}</p>
+                        <br>
                         
-                        {% if post.talk-link %}
-                            <a href="{{ post.talk-link }}" class="btn btn-default">Join the meeting</a>
+                        {% if post.talk-watch %}
+                            <a href="{{ post.talk-watch }}" class="btn btn-default">Watch it again</a>
+                        {% else %}
+                            {% if post.talk-link %}
+                                <a href="{{ post.talk-link }}" class="btn btn-default">Join the meeting</a>
+                            {% endif %}
+                            {% if post.talk-form %}
+                                <a href="{{ post.talk-form }}" class="btn btn-default">Submit your question</a>
+                            {% endif %}
                         {% endif %}
-                        {% if post.talk-form %}
-                            <a href="{{ post.talk-form }}" class="btn btn-default">Ask a question</a>
-                        {% endif %}
+                        
                     </div>
                 </div>
             {% endfor %}

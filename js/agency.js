@@ -35,3 +35,30 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+// Set the target date
+const targetDate = new Date('2023-03-03T08:00:00');
+
+// Get the timer elements from the HTML
+const daysEl = document.getElementById('days');
+const hoursEl = document.getElementById('hours');
+const minutesEl = document.getElementById('minutes');
+const secondsEl = document.getElementById('seconds');
+
+// Update the countdown every second
+setInterval(() => {
+  // Calculate the remaining time in seconds
+  const remainingTime = Math.floor((targetDate - new Date()) / 1000);
+
+  // Calculate the number of days, hours, minutes, and seconds
+  const days = Math.floor(remainingTime / 86400).toString().padStart(2, '0');
+  const hours = Math.floor((remainingTime % 86400) / 3600).toString().padStart(2, '0');
+  const minutes = Math.floor((remainingTime % 3600) / 60).toString().padStart(2, '0');
+  const seconds = Math.floor(remainingTime % 60).toString().padStart(2, '0');
+
+  // Update the timer display
+  daysEl.textContent = days;
+  hoursEl.textContent = hours;
+  minutesEl.textContent = minutes;
+  secondsEl.textContent = seconds;
+}, 1000);

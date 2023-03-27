@@ -911,6 +911,54 @@ ul.social-buttons li a:active {
     transform: rotate(90deg);
 }
 
+.game {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.game.winner--true {
+    border: 5px solid #{{ site.data.template.color.primary }};
+}
+
+.game .game__image {
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 390px;
+}
+
+.game .game__content {
+    padding-left: 35px;
+}
+
+.game .game__winner {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    background: #{{ site.data.template.color.primary }};
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 5;
+    padding: 15px;
+}
+
+.game figcaption {
+    margin-bottom: 35px;
+}
+
+.game .text-muted {
+    text-transform: uppercase;
+}
+
+.game h4 {
+    margin: 0;
+}
+
+.game h5 {
+    margin-top: 30px;
+}
+
 ::-moz-selection {
     text-shadow: none;
     background: #{{ site.data.template.color.primary }};

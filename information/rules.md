@@ -18,4 +18,4 @@ layout: page
 6. Students need to include a credits (either in game or as a separate text file) explaining who was responsible for each part of the project
 7. Students are encouraged to create the majority of art and music for their game. If students use any assets found online, full credit must be given to the original author(s) as part of the game's credits.
 8. When you submit your work you need to upload copies of all code, artwork, music, sound effects, etc. you used to create your game.
-9. Students need to upload their work by the Sunday night deadline to be eligible for prizes and swag.
+9. Students need to upload their work by the Sunday lunchtime deadline to be eligible for prizes and swag.

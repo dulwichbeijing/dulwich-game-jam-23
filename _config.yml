@@ -11,35 +11,14 @@ people:
 - name: 育碧游戏
   pic: ubisoft
   position: Ubisoft China
-  #social:
-  #  - title: twitter
-  #    url: #
-  #  - title: facebook
-  #    url: #
-  #  - title: stack-overflow
-  #    url: #
 
 - name: Mr Colin Walder
   pic: colin
   position: CD PROJEKT RED
-  #social:
-  #  - title: twitter
-  #    url: #
-  #  - title: facebook
-  #    url: #
-  #  - title: linkedin
-  #    url: #
 
 - name: Dr Alena Denisova
   pic: alena
   position: The University of York
-  #social:
-  #  - title: twitter
-  #    url: #
-  #  - title: facebook
-  #    url: #
-  #  - title: google-plus
-  #    url: #
 
 - name: Dr Sean Walton
   pic: sean
@@ -63,3 +42,7 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+collections:
+  games:
+    output: false
